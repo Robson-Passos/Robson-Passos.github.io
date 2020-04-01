@@ -1,0 +1,67 @@
+html, body {
+    font-family: "Droid Serif",Georgia,"Times New Roman",Times,serif;
+    max-width: 100%;
+}
+
+/* Navbar */
+.navbar {
+    border-bottom: 2px solid #c6c6c68f;
+}
+
+.navbar-nav {
+    margin: auto;
+}
+
+.navbar-brand {
+    font-weight: normal;
+    font-size: 18pt;
+}
+
+.navbar-light .navbar-nav a.nav-link {
+    color: rgba(0, 0, 0, 0.548);
+    font-size: 16pt;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+/* Imagem de perfil e descrição --> CSS Grid */
+
+.perfil {
+    margin-top: 10px;
+    gap: 4px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: "imagem descricao";
+}
+
+#descricao {
+    padding: 10px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {  
+    .perfil {
+        grid-template-columns: 1fr;
+        grid-template-areas: "imagem" "descricao";
+    }
+}
+
+
+/* Ícones sociais */
+
+i {
+    font-size: 14pt;
+}
+
+.social-icons {
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #c6c6c68f;
+    background-color: rgba(211, 211, 211, 0.418);
+}
